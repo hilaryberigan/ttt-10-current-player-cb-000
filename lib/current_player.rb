@@ -8,6 +8,7 @@ def current_player
 end
 
 def turn_count(board)
+  turns = 0
   board.each do |element|
     if element != "" && element != " " && element != nil
       turns += 1
