@@ -1,4 +1,10 @@
 def current_player
+  turns = turns_count(board)
+  if turns.even?
+    return "X"
+  else
+    return "O"
+  end 
 end
 
 def turn_count(board)
@@ -6,5 +12,5 @@ def turn_count(board)
     if element != "" && element != " " & element != nil
       turns += 1
     end
-    return turns 
+    return turns
 end
