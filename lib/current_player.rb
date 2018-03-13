@@ -4,12 +4,12 @@ def current_player
     return "X"
   else
     return "O"
-  end 
+  end
 end
 
 def turn_count(board)
   board.each do |element|
-    if element != "" && element != " " & element != nil
+    if element != "" && element != " " && element != nil
       turns += 1
     end
     return turns
