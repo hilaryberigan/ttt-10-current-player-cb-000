@@ -12,5 +12,6 @@ def turn_count(board)
     if element != "" && element != " " && element != nil
       turns += 1
     end
-    return turns
+  end
+  return turns
 end
